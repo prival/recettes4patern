@@ -56,7 +56,8 @@
 
 /* Page content */
 .main {
-  margin-left: 300px; /* Same as the width of the sidenav */
+  margin-top : 10px;
+  margin-left: 320px; /* More than the width of the sidenav */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

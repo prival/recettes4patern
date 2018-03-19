@@ -26,9 +26,19 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.springframework.boot:spring-boot-devtools")
+    compile("org.postgresql:postgresql:9.4-1200-jdbc41") {
+        // exclude transitive logging dependency
+        exclude group: 'org.slf4j'
+        // might need to exclude log4j, not sure?
+        exclude group: 'log4j', module: 'log4j'
+    }
     testCompile("junit:junit")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.springframework.security:spring-security-test")
 }
 
 task wrapper(type: Wrapper) {
