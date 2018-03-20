@@ -13,9 +13,6 @@ import java.util.List;
 @Controller
 public class MenuController {
 
-    @Autowired
-    CategorieService categorieService;
-
     @GetMapping("/index")
     public String index(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
         model.addAttribute("name", name);
@@ -23,9 +20,7 @@ public class MenuController {
     }
 
     @GetMapping("/plats")
-    public String plats(Model model) {
-        List<Categorie> categories = categorieService.getAllCategories();
-        model.addAttribute("categories", categories);
+    public String plats() {
         return "plats";
     }
 

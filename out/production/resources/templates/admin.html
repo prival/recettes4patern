@@ -1,12 +1,81 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Security Example </title>
+    <title>Recettes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-<div>
+<div id="mySidenav" class="sidenav" w3-include-html="../menu.html"></div>
 
+<!-- page -->
+<div class="main">
+    <form th:action="@{/addRecette}" th:object="${recetteForm}" method="POST">
+    <p>
+        Définir une recette
+    </p>
+
+    <div class="form-group">
+        <label for="categorie">Select list:</label>
+        <select class="form-control select" id="categorie" th:field="*{categorieId}">
+            <option th:each="categorie : ${categories}" th:value="${categorie.id}" th:utext="${categorie.libelle}"></option>
+        </select>
+    </div>
+
+        <div>Titre :</div>
+        <input type="text" id="libelle" th:field="*{libelle}" style="width:30em;" />
+
+    <div>Ingrédients :</div>
+
+        <div id="ingredients">
+            <p th:each="currentIngredient, stat : *{ingredients}">
+                <input type="text" th:name="|ingredients[${stat.index}]|" th:value="${currentIngredient.libelle}" style="width:30em;" />
+                <button id="ingredientButtonPlus" type="button" onclick="addIngredient();" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-plus"></span> Plus
+                </button>
+            </p>
+        </div>
+
+    <div>Etapes :</div>
+
+    <div id="etapes">
+        <p>
+            <input type="text" id="etape-1" style="width:30em;" />
+            <button id="etapeButtonPlus" type="button" onclick="addEtape();" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-plus"></span> Plus
+            </button>
+        </p>
+    </div>
+
+    <div>
+        <input type="submit" value="Créer" />
+    </div>
+
+    </form>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../js/include.js"></script>
+<script>
+    function addIngredient() {
+        $("#ingredientButtonPlus").remove();
+        $("#ingredients").append('<p><input type="text" style="width:30em;" />'
+                    + '<button id="ingredientButtonPlus" type="button" onclick="addIngredient();" class="btn btn-default btn-sm">'
+                    + '<span class="glyphicon glyphicon-plus"></span> Plus</button></p>');
+    }
+
+
+    function addEtape() {
+        $("#etapeButtonPlus").remove();
+        $("#etapes").append('<p><input type="text" th:field="*{etape' + 1 + '}" style="width:30em;" />'
+                    + '<button id="etapeButtonPlus" type="button" onclick="addEtape();" class="btn btn-default btn-sm">'
+                    + '<span class="glyphicon glyphicon-plus"></span> Plus</button></p>');
+    }
+</script>
 </body>
 </html>

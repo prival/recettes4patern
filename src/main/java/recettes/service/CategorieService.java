@@ -34,12 +34,4 @@ public class CategorieService {
         return categorieRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Categorie", "id", id));
     }
-
-    public CategorieRepository getCategorieRepository() {
-        return categorieRepository;
-    }
-
-    public void setCategorieRepository(CategorieRepository categorieRepository) {
-        this.categorieRepository = categorieRepository;
-    }
 }

@@ -30,7 +30,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.springframework.boot:spring-boot-devtools")
-    compile("org.postgresql:postgresql:9.4-1200-jdbc41") {
+    compile("org.postgresql:postgresql:42.1.1") {
         // exclude transitive logging dependency
         exclude group: 'org.slf4j'
         // might need to exclude log4j, not sure?
