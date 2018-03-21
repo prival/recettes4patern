@@ -13,14 +13,14 @@
 
 <!-- page -->
 <div class="main">
-    <form th:action="@{/addRecette}" th:object="${recetteForm}" method="POST">
+    <form th:action="@{/addRecette}" th:object="${recette}" method="POST">
     <p>
         Définir une recette
     </p>
 
     <div class="form-group">
         <label for="categorie">Select list:</label>
-        <select class="form-control select" id="categorie" th:field="*{categorieId}">
+        <select class="form-control select" id="categorie" th:field="*{categorie}">
             <option th:each="categorie : ${categories}" th:value="${categorie.id}" th:utext="${categorie.libelle}"></option>
         </select>
     </div>
@@ -32,7 +32,7 @@
 
         <div id="ingredients">
             <p th:each="currentIngredient, stat : *{ingredients}">
-                <input type="text" th:name="|ingredients[${stat.index}]|" th:value="${currentIngredient.libelle}" style="width:30em;" />
+                <input type="text" th:name="ingredientName" th:value="${currentIngredient.libelle}" style="width:30em;" />
                 <button id="ingredientButtonPlus" type="button" onclick="addIngredient();" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-plus"></span> Plus
                 </button>
@@ -42,8 +42,8 @@
     <div>Etapes :</div>
 
     <div id="etapes">
-        <p>
-            <input type="text" id="etape-1" style="width:30em;" />
+        <p th:each="currentEtape, stat : *{etapes}">
+            <input type="text" th:name="etapeName" th:value="${currentEtape.libelle}" style="width:30em;" />
             <button id="etapeButtonPlus" type="button" onclick="addEtape();" class="btn btn-default btn-sm">
                 <span class="glyphicon glyphicon-plus"></span> Plus
             </button>
@@ -63,18 +63,16 @@
 <script src="../js/include.js"></script>
 <script>
     function addIngredient() {
-        $("#ingredientButtonPlus").remove();
-        $("#ingredients").append('<p><input type="text" style="width:30em;" />'
-                    + '<button id="ingredientButtonPlus" type="button" onclick="addIngredient();" class="btn btn-default btn-sm">'
-                    + '<span class="glyphicon glyphicon-plus"></span> Plus</button></p>');
+        $("#ingredients").append('<p>'
+                    + '<input type="text" name="ingredientName" style="width:30em;" />'
+                    + '</p>');
     }
 
 
     function addEtape() {
-        $("#etapeButtonPlus").remove();
-        $("#etapes").append('<p><input type="text" th:field="*{etape' + 1 + '}" style="width:30em;" />'
-                    + '<button id="etapeButtonPlus" type="button" onclick="addEtape();" class="btn btn-default btn-sm">'
-                    + '<span class="glyphicon glyphicon-plus"></span> Plus</button></p>');
+        $("#etapes").append('<p>'
+                    + '<input type="text" name="etapeName" style="width:30em;" />'
+                    + '</p>');
     }
 </script>
 </body>

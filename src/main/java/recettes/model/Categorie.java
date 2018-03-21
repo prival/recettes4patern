@@ -14,12 +14,12 @@ public class Categorie {
     private String libelle;
 
     @Column(name = "ordre")
-    private long ordre;
+    private int ordre;
 
     protected Categorie() {
     }
 
-    public Categorie(String libelle, long ordre) {
+    public Categorie(String libelle, int ordre) {
         this.libelle = libelle;
         this.ordre = ordre;
     }
@@ -40,11 +40,11 @@ public class Categorie {
         this.libelle = libelle;
     }
 
-    public long getOrdre() {
+    public int getOrdre() {
         return ordre;
     }
 
-    public void setOrdre(long ordre) {
+    public void setOrdre(int ordre) {
         this.ordre = ordre;
     }
 

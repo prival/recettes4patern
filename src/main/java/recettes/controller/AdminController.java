@@ -3,11 +3,7 @@ package recettes.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import recettes.form.RecetteForm;
+import org.springframework.web.bind.annotation.*;
 import recettes.model.Categorie;
 import recettes.model.Etape;
 import recettes.model.Ingredient;
@@ -40,36 +36,39 @@ public class AdminController {
         List<Categorie> categories = categorieService.getAllCategories();
         model.addAttribute("categories", categories);
 
-        RecetteForm recetteForm = new RecetteForm();
-        model.addAttribute("recetteForm", recetteForm);
+        Recette recette = new Recette();
+        model.addAttribute("recette", recette);
+//        RecetteForm recetteForm = new RecetteForm();
+//        model.addAttribute("recetteForm", recetteForm);
 
         return "admin";
     }
 
     @RequestMapping(value = { "/addRecette" }, method = RequestMethod.POST)
-    public String saveRecette(Model model, @ModelAttribute("recetteForm") RecetteForm recetteForm) {
-
-        Categorie categorie = categorieService.getCategorieById(recetteForm.getCategorieId());
-
-        List<Ingredient> libellesIngredients = recetteForm.getIngredients();
-        List<String> libellesEtapes = recetteForm.getEtapes();
+    public String saveRecette(
+            @ModelAttribute("recette") Recette recette,
+            @RequestParam(value = "ingredientName") String[] ingredientsName,
+            @RequestParam(value = "etapeName") String[] etapesName) {
 
         List<Ingredient> ingredients = new ArrayList<Ingredient>();
         List<Etape> etapes = new ArrayList<Etape>();
 
-        for (Ingredient ingredient : libellesIngredients) {
-            ingredients.add(ingredient);
+        if (ingredientsName != null) {
+            for (int i = 0; i < ingredientsName.length; i++) {
+                int ordre = i+1;
+                Ingredient ingredient = new Ingredient(ingredientsName[i], ordre);
+                ingredients.add(ingredient);
+            }
         }
 
-        for (String libelle : libellesEtapes) {
-            Etape etape = new Etape(libelle, 1);
-            etapes.add(etape);
+        if (etapesName != null) {
+            for (int i = 0; i < etapesName.length; i++) {
+                int ordre = i+1;
+                Etape etape = new Etape(etapesName[i], ordre);
+                etapes.add(etape);
+            }
         }
 
-        Recette recette = new Recette();
-
-        recette.setLibelle(recetteForm.getLibelle());
-        recette.setCategorie(categorie);
         recette.setOrdre(1);
         recette.setIngredients(ingredients);
         recette.setEtapes(etapes);

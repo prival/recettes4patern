@@ -13,16 +13,13 @@ public class Ingredient {
     @Column(name = "libelle")
     private String libelle;
 
-    @ManyToOne
-    private Recette recette;
-
     @Column(name = "ordre")
-    private long ordre;
+    private int ordre;
 
     protected Ingredient() {
     }
 
-    public Ingredient(String libelle, long ordre) {
+    public Ingredient(String libelle, int ordre) {
         this.libelle = libelle;
         this.ordre = ordre;
     }
@@ -43,19 +40,19 @@ public class Ingredient {
         this.libelle = libelle;
     }
 
-    public Recette getRecette() {
-        return recette;
-    }
+//    public Recette getRecette() {
+//        return recette;
+//    }
 
-    public void setRecette(Recette recette) {
-        this.recette = recette;
-    }
+//    public void setRecette(Recette recette) {
+//        this.recette = recette;
+//    }
 
-    public long getOrdre() {
+    public int getOrdre() {
         return ordre;
     }
 
-    public void setOrdre(long ordre) {
+    public void setOrdre(int ordre) {
         this.ordre = ordre;
     }
 

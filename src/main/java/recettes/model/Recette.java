@@ -1,6 +1,7 @@
 package recettes.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,18 +16,28 @@ public class Recette {
     private String libelle;
 
     @Column(name = "ordre")
-    private long ordre;
+    private int ordre;
 
     @ManyToOne
+    @JoinColumn(name = "id_categorie")
     private Categorie categorie;
 
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "id_recette")
     private List<Ingredient> ingredients;
 
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "id_etape")
     private List<Etape> etapes;
 
     public Recette() {
+        ingredients = new ArrayList<Ingredient>();
+        Ingredient initIngredient = new Ingredient("", 1);
+        ingredients.add(initIngredient);
+
+        etapes = new ArrayList<Etape>();
+        Etape initEtape = new Etape("", 1);
+        etapes.add(initEtape);
     }
 
     public long getId() {
@@ -45,11 +56,11 @@ public class Recette {
         this.libelle = libelle;
     }
 
-    public long getOrdre() {
+    public int getOrdre() {
         return ordre;
     }
 
-    public void setOrdre(long ordre) {
+    public void setOrdre(int ordre) {
         this.ordre = ordre;
     }
 
