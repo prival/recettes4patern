@@ -1,3 +1,6 @@
+
+-- Schéma initial en sql
+
 -- Table: public.categorie
 
 -- DROP TABLE public.categorie;

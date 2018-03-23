@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-//                .antMatchers("/admin").authenticated()
+                .antMatchers("/admin").authenticated()
                 .antMatchers("/*").permitAll()
                 .and()
                 .formLogin()
@@ -44,8 +44,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public UserDetailsService userDetailsService() {
         UserDetails user =
                 User.withDefaultPasswordEncoder()
-                        .username("user")
-                        .password("Sqli1234")
+                        .username("root")
+                        .password("dfjk")
                         .roles("ADMIN")
                         .build();
 

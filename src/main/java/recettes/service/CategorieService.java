@@ -26,12 +26,16 @@ public class CategorieService {
         return categorieRepository.findAll();
     }
 
+    public Categorie getCategorieById(@PathVariable(value = "id") Long id) {
+        return categorieRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Categorie", "id", id));
+    }
+
     public Categorie createCategorie(@Valid @RequestBody Categorie categorie) {
         return categorieRepository.save(categorie);
     }
 
-    public Categorie getCategorieById(@PathVariable(value = "id") Long id) {
-        return categorieRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Categorie", "id", id));
+    public void deleteCategorie(@Valid @RequestBody Categorie categorie) {
+        categorieRepository.delete(categorie);
     }
 }

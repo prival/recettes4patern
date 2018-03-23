@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/appli.iml" filepath="$PROJECT_DIR$/appli.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/appli_main.iml" filepath="$PROJECT_DIR$/.idea/modules/appli_main.iml" group="appli" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/appli_test.iml" filepath="$PROJECT_DIR$/.idea/modules/appli_test.iml" group="appli" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test_recette.iml" filepath="$PROJECT_DIR$/.idea/modules/test_recette.iml" group="test_recette" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test_recette/test_recette_main.iml" filepath="$PROJECT_DIR$/.idea/modules/test_recette/test_recette_main.iml" group="test_recette" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test_recette/test_recette_test.iml" filepath="$PROJECT_DIR$/.idea/modules/test_recette/test_recette_test.iml" group="test_recette" />
     </modules>
   </component>
 </project>

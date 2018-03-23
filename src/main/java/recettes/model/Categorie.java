@@ -1,6 +1,7 @@
 package recettes.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Categorie {
@@ -15,6 +16,9 @@ public class Categorie {
 
     @Column(name = "ordre")
     private int ordre;
+
+    @OneToMany(mappedBy = "categorie", cascade = {CascadeType.ALL})
+    private List<Recette> recettes;
 
     protected Categorie() {
     }
@@ -46,6 +50,14 @@ public class Categorie {
 
     public void setOrdre(int ordre) {
         this.ordre = ordre;
+    }
+
+    public List<Recette> getRecettes() {
+        return recettes;
+    }
+
+    public void setRecettes(List<Recette> recettes) {
+        this.recettes = recettes;
     }
 
     @Override
