@@ -13,6 +13,8 @@ import recettes.service.EtapeService;
 import recettes.service.IngredientService;
 import recettes.service.RecetteService;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,12 +23,6 @@ public class AdminController {
 
     @Autowired
     CategorieService categorieService;
-
-    @Autowired
-    IngredientService ingredientService;
-
-    @Autowired
-    EtapeService etapeService;
 
     @Autowired
     RecetteService recetteService;
@@ -38,8 +34,6 @@ public class AdminController {
 
         Recette recette = new Recette();
         model.addAttribute("recette", recette);
-//        RecetteForm recetteForm = new RecetteForm();
-//        model.addAttribute("recetteForm", recetteForm);
 
         return "admin";
     }
@@ -50,14 +44,14 @@ public class AdminController {
             @RequestParam(value = "ingredientName") String[] ingredientsName,
             @RequestParam(value = "etapeName") String[] etapesName) {
 
-        List<Ingredient> ingredients = new ArrayList<Ingredient>();
-        List<Etape> etapes = new ArrayList<Etape>();
+        recette.setIngredients(new ArrayList<Ingredient>());
+        recette.setEtapes(new ArrayList<Etape>());
 
         if (ingredientsName != null) {
             for (int i = 0; i < ingredientsName.length; i++) {
                 int ordre = i+1;
                 Ingredient ingredient = new Ingredient(ingredientsName[i], ordre);
-                ingredients.add(ingredient);
+                recette.addIngredient(ingredient);
             }
         }
 
@@ -65,13 +59,11 @@ public class AdminController {
             for (int i = 0; i < etapesName.length; i++) {
                 int ordre = i+1;
                 Etape etape = new Etape(etapesName[i], ordre);
-                etapes.add(etape);
+                recette.addEtape(etape);
             }
         }
 
         recette.setOrdre(1);
-        recette.setIngredients(ingredients);
-        recette.setEtapes(etapes);
 
         recetteService.createRecette(recette);
 

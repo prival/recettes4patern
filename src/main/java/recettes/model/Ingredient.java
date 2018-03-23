@@ -13,6 +13,10 @@ public class Ingredient {
     @Column(name = "libelle")
     private String libelle;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_recette")
+    private Recette recette;
+
     @Column(name = "ordre")
     private int ordre;
 
@@ -40,13 +44,13 @@ public class Ingredient {
         this.libelle = libelle;
     }
 
-//    public Recette getRecette() {
-//        return recette;
-//    }
+    public Recette getRecette() {
+        return recette;
+    }
 
-//    public void setRecette(Recette recette) {
-//        this.recette = recette;
-//    }
+    public void setRecette(Recette recette) {
+        this.recette = recette;
+    }
 
     public int getOrdre() {
         return ordre;

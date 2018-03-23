@@ -22,12 +22,10 @@ public class Recette {
     @JoinColumn(name = "id_categorie")
     private Categorie categorie;
 
-    @OneToMany(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "id_recette")
+    @OneToMany(mappedBy = "recette", cascade = {CascadeType.ALL})
     private List<Ingredient> ingredients;
 
-    @OneToMany(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "id_etape")
+    @OneToMany(mappedBy = "recette", cascade = {CascadeType.ALL})
     private List<Etape> etapes;
 
     public Recette() {
@@ -38,6 +36,24 @@ public class Recette {
         etapes = new ArrayList<Etape>();
         Etape initEtape = new Etape("", 1);
         etapes.add(initEtape);
+    }
+
+    /**
+     * Ajoute un ingrédient
+     * @param ingredient
+     */
+    public void addIngredient(Ingredient ingredient) {
+        ingredients.add(ingredient);
+        ingredient.setRecette(this);
+    }
+
+    /**
+     * Ajoute une étape
+     * @param etape
+     */
+    public void addEtape(Etape etape) {
+        etapes.add(etape);
+        etape.setRecette(this);
     }
 
     public long getId() {
