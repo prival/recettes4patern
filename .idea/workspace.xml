@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573df8b-687b-42e7-84c8-5444795f0376" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/schema/init_db.sql" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/controller/AdminController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/model/Etape.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/model/Etape.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/model/Ingredient.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/model/Ingredient.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/model/Recette.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/model/Recette.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/model/Etape.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/model/Etape.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/model/Ingredient.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/model/Ingredient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/model/Recette.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/model/Recette.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -56,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1323,7 +1312,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
