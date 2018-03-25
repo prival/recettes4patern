@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="appli_main" target="1.8" />
       <module name="appli_test" target="1.8" />
+      <module name="recettes4patern_main" target="1.8" />
+      <module name="recettes4patern_test" target="1.8" />
       <module name="test_recette_main" target="1.8" />
       <module name="test_recette_test" target="1.8" />
     </bytecodeTargetLevel>

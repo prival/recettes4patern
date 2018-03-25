@@ -8,10 +8,10 @@
 <body>
 <div id="mySidenav" class="sidenav" th:fragment="sidenav">
 <p th:each="categorie : ${categories}">
-    <a class="menu-first" th:href="${#strings.unCapitalize(categorie.libelle)}" th:value="${categorie.id}">
+    <a class="menu-first" th:href="|/${#strings.unCapitalize(categorie.libelle)}|" th:value="${categorie.id}">
         <span th:text="${categorie.libelle}"></span>
     </a>
-    <a class="menu-second" th:each="recette : ${categorie.recettes}" th:href="@{|recettes/${recette.id}|}" th:name="idRecette">
+    <a class="menu-second" th:each="recette : ${categorie.recettes}" th:href="@{|/recette/${recette.id}|}" th:name="idRecette">
         <span th:text="${recette.libelle}"></span>
     </a>
 </p>
@@ -22,7 +22,7 @@
 <a class="menu-second" href="tarte_pommes">Tarte aux pommes</a>
 <a class="menu-second" href="mousse_chocolat">Mousse au chocolat</a>
 <br/>
-<a class="menu-first" href="admin">Admin</a>
+<a class="menu-first" href="/admin">Admin</a>
 </div>
 </body>
 </html>

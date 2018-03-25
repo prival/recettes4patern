@@ -18,12 +18,14 @@
         <table>
         <tbody>
         <tr th:each="categorie, stat : ${categories}">
-            <td><a th:href="@{|categories/edit/${categorie.id}|}">
-                <span th:text="${categorie.libelle}"></span>
-            </a></td>
-            <td><form th:action="@{/categorie/delete}" method="POST">
-                <input type="submit" value="Supprimer" />
-            </form></td>
+            <td>
+                <a th:href="@{|categorie/edit/${categorie.id}|}">
+                    <span th:text="${categorie.libelle}"></span>
+                </a>
+            </td>
+            <td>
+                <a th:href="@{|/categorie/delete/${categorie.id}|}" class="btn btn-danger">Supprimer</a>
+            </td>
 
         </tr>
         </tbody>

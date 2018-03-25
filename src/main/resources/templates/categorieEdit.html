@@ -5,23 +5,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/menu.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/menu.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
 </head>
 <body>
 
 <div th:insert="menu :: sidenav"></div>
 
+<!-- page -->
 <div class="main">
 
     <form th:action="@{/categorie/update}" th:object="${categorie}" method="POST">
+        <input type="hidden" th:field="*{id}" />
         <p>
             Editer une catégorie
         </p>
 
         <div>Titre :</div>
         <input type="text" id="libelle" th:field="*{libelle}" style="width:30em;" />
-        <input type="hidden" th:field="*{ordre}" th:value="1" />
+        <input type="hidden" th:field="*{ordre}" />
         <div>
             <input type="submit" value="Modifier" />
         </div>

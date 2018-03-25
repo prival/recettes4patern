@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/menu.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/menu.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
 </head>
 <body>
 
@@ -16,13 +16,44 @@
 <div class="main">
     <p>
         Détail de la recette
-        <form action="@{|/recette/edit/${recette.id}|" th:if="${session.User != null}">
-            <input type="submit" value="Editer" />
-        </form>
-    <form action="@{|/categorie/delete/${recette.id}|" th:if="${session.User != null}">
-        <input type="submit" value="Supprimer" />
-    </form>
     </p>
+
+    <div th:object="${recette}">
+
+        <div class="form-group">
+            <span th:text="${recette.categorie.id}" />
+        </div>
+
+        <p>Titre :</p>
+        <span th:text="${recette.libelle}" />
+
+        <p>Ingrédients :</p>
+
+        <div id="ingredients">
+            <p th:each="ingredient, stat : *{ingredients}">
+                <span th:text="${ingredient.libelle}" />
+            </p>
+        </div>
+
+        <p>Etapes :</p>
+
+        <div id="etapes">
+            <p th:each="etape, stat : *{etapes}">
+                <span th:text="${etape.libelle}" />
+            </p>
+        </div>
+
+    </div>
+
+    <div th:if="${session.User != null}">
+        <a th:href="@{|/recette/edit/${recette.id}|}" class="btn btn-primary">Editer</a>
+        <form th:action="@{|/recette/delete/${recette.id}|}"
+              onsubmit="return confirm('Supprimer la recette ?');"
+              method="post">
+            <input type="submit" class="btn btn-danger" value="Supprimer" />
+        </form>
+    </div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -28,8 +28,8 @@ public class RecetteService {
     }
 
 
-    public void deleteRecette(@Valid @RequestBody Recette recette) {
-        recetteRepository.delete(recette);
+    public void deleteRecette(@Valid @RequestBody long id) {
+        recetteRepository.deleteById(id);
     }
 
 }

@@ -35,7 +35,7 @@ public class CategorieService {
         return categorieRepository.save(categorie);
     }
 
-    public void deleteCategorie(@Valid @RequestBody Categorie categorie) {
-        categorieRepository.delete(categorie);
+    public void deleteCategorie(@Valid @RequestBody long id) {
+        categorieRepository.deleteById(id);
     }
 }

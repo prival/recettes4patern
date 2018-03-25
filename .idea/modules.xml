@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/appli.iml" filepath="$PROJECT_DIR$/appli.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appli_main.iml" filepath="$PROJECT_DIR$/.idea/modules/appli_main.iml" group="appli" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appli_test.iml" filepath="$PROJECT_DIR$/.idea/modules/appli_test.iml" group="appli" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recettes4patern.iml" filepath="$PROJECT_DIR$/.idea/modules/recettes4patern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recettes4patern_main.iml" filepath="$PROJECT_DIR$/.idea/modules/recettes4patern_main.iml" group="recettes4patern" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recettes4patern_test.iml" filepath="$PROJECT_DIR$/.idea/modules/recettes4patern_test.iml" group="recettes4patern" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/test_recette.iml" filepath="$PROJECT_DIR$/.idea/modules/test_recette.iml" group="test_recette" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/test_recette/test_recette_main.iml" filepath="$PROJECT_DIR$/.idea/modules/test_recette/test_recette_main.iml" group="test_recette" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/test_recette/test_recette_test.iml" filepath="$PROJECT_DIR$/.idea/modules/test_recette/test_recette_test.iml" group="test_recette" />

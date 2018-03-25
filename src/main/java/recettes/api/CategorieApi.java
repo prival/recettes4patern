@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class CategorieController {
+public class CategorieApi {
 
     @Autowired
     CategorieRepository categorieRepository;
