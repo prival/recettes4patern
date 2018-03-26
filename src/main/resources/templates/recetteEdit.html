@@ -34,22 +34,26 @@
             <div>Ingrédients :</div>
 
             <div id="ingredients">
-                <p th:each="currentIngredient, stat : *{ingredients}">
-                    <input type="text" th:name="ingredientName" th:value="${currentIngredient.libelle}" style="width:30em;" />
-                    <button id="ingredientButtonPlus" type="button" onclick="addIngredient();" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-plus"></span> Plus
-                    </button>
+                <button id="ingredientButtonPlus" type="button" onclick="addIngredient();" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-plus"></span> Plus
+                </button>
+                <p th:each="ingredient, stat : *{ingredients}">
+                    <input type="hidden" th:field="${recette.ingredients[__${stat.index}__].id}" />
+                    <input type="hidden" th:field="${recette.ingredients[__${stat.index}__].recette}" />
+                    <input type="text" th:name="ingredientName" th:field="${recette.ingredients[__${stat.index}__].libelle}" style="width:30em;" />
                 </p>
             </div>
 
             <div>Etapes :</div>
 
             <div id="etapes">
-                <p th:each="currentEtape, stat : *{etapes}">
-                    <input type="text" th:name="etapeName" th:value="${currentEtape.libelle}" style="width:30em;" />
-                    <button id="etapeButtonPlus" type="button" onclick="addEtape();" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-plus"></span> Plus
-                    </button>
+                <button id="etapeButtonPlus" type="button" onclick="addEtape();" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-plus"></span> Plus
+                </button>
+                <p th:each="etape, stat : *{etapes}" th:object="${recette.etapes[__${stat.index}__]}">
+                    <input type="hidden" th:field="${recette.etapes[__${stat.index}__].id}" />
+                    <input type="hidden" th:field="${recette.etapes[__${stat.index}__].recette}" />
+                    <input type="text" th:name="etapeName" th:field="${recette.etapes[__${stat.index}__].libelle}" style="width:30em;" />
                 </p>
             </div>
 

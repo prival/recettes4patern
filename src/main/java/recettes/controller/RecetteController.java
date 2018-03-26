@@ -77,6 +77,15 @@ public class RecetteController {
         model.addAttribute("categories", categories);
 
         Recette recette = recetteService.getRecetteById(id);
+
+        if (recette.getIngredients() == null || recette.getIngredients().isEmpty()) {
+            recette.addIngredient(new Ingredient("", 1));
+        }
+
+        if (recette.getEtapes() == null || recette.getEtapes().isEmpty()) {
+            recette.addEtape(new Etape("", 1));
+        }
+
         model.addAttribute("recette", recette);
 
         return "recetteEdit";
