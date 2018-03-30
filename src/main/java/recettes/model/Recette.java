@@ -22,10 +22,10 @@ public class Recette {
     @JoinColumn(name = "id_categorie")
     private Categorie categorie;
 
-    @OneToMany(mappedBy = "recette", cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "recette", orphanRemoval = true, cascade = {CascadeType.ALL})
     private List<Ingredient> ingredients;
 
-    @OneToMany(mappedBy = "recette", cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "recette", orphanRemoval = true, cascade = {CascadeType.ALL})
     private List<Etape> etapes;
 
     public Recette() {

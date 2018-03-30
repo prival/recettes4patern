@@ -7,22 +7,26 @@
 </head>
 <body>
 <div id="mySidenav" class="sidenav" th:fragment="sidenav">
-<p th:each="categorie : ${categories}">
-    <a class="menu-first" th:href="|/${#strings.unCapitalize(categorie.libelle)}|" th:value="${categorie.id}">
-        <span th:text="${categorie.libelle}"></span>
-    </a>
-    <a class="menu-second" th:each="recette : ${categorie.recettes}" th:href="@{|/recette/${recette.id}|}" th:name="idRecette">
-        <span th:text="${recette.libelle}"></span>
-    </a>
-</p>
-<a class="menu-first" href="plats">Plats</a>
-<a class="menu-second" href="pate_gyozas">Pâte à gyozas</a>
-<a class="menu-second" href="brocoli_oignons">Brocoli aux oignons</a>
-<a class="menu-first" href="desserts">Desserts</a>
-<a class="menu-second" href="tarte_pommes">Tarte aux pommes</a>
-<a class="menu-second" href="mousse_chocolat">Mousse au chocolat</a>
-<br/>
-<a class="menu-first" href="/admin">Admin</a>
+
+    <div th:each="categorie : ${session.categoriesMenu}" th:id="|categorie${categorie.id}|" th:name="${categorie.libelle}">
+        <a class="menu-first" th:href="|/${#strings.unCapitalize(categorie.libelle)}|" th:value="${categorie.id}">
+            <span th:text="${categorie.libelle}"></span>
+        </a>
+        <input type="hidden" class="ordreCategorie" th:value="${categorie.ordre}" />
+
+        <p th:each="recette : ${categorie.recettes}" th:name="${recette.libelle}">
+            <a class="menu-second" th:href="@{|/recette/${recette.id}|}" th:name="idRecette">
+                <span th:text="${recette.libelle}"></span>
+            </a>
+            <input type="hidden" class="ordreRecette" th:id="|ordre${recette.id}|" th:value="${recette.ordre}" />
+        </p>
+    </div>
+
+    <br/>
+
+    <a id="goAdmin" class="menu-first" href="/admin">Admin</a>
+
 </div>
+
 </body>
 </html>

@@ -17,15 +17,15 @@
 
     <form th:action="@{/categorie/update}" th:object="${categorie}" method="POST">
         <input type="hidden" th:field="*{id}" />
+        <input type="hidden" th:field="*{ordre}" />
         <p>
             Editer une catégorie
         </p>
 
         <div>Titre :</div>
         <input type="text" id="libelle" th:field="*{libelle}" style="width:30em;" />
-        <input type="hidden" th:field="*{ordre}" />
         <div>
-            <input type="submit" value="Modifier" />
+            <input id="buttonModifier" type="submit" value="Modifier" />
         </div>
 
     </form>

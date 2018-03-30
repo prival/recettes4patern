@@ -15,7 +15,8 @@
 <div class="main">
 
 <div>
-    <form th:action="@{/addRecette}" th:object="${recette}" method="POST">
+    <form th:action="@{/addRecette}" onsubmit="searchOrdreRecette();" th:object="${recette}" method="POST">
+        <input type="hidden" id="ordre" th:field="*{ordre}" />
     <p>
         Définir une recette
     </p>
@@ -53,7 +54,7 @@
     </div>
 
     <div>
-        <input type="submit" value="Créer" />
+        <input id="buttonCreer" type="submit" value="Créer" />
     </div>
 
     </form>
@@ -62,7 +63,7 @@
     <br/>
 
     <div>
-        <a th:href="categorie">Gérer les catégories</a>
+        <a id="goGestionCategories" th:href="categorie">Gérer les catégories</a>
     </div>
 
 </div>
@@ -82,6 +83,25 @@
         $("#etapes").append('<p>'
                     + '<input type="text" name="etapeName" style="width:30em;" />'
                     + '</p>');
+    }
+
+    function searchOrdreRecette() {
+        var categorieId = $('#categorie').find(":selected").val();
+        var sIdCategorieMenu = '#categorie' + categorieId;
+        var lastOrdre = $(sIdCategorieMenu).find('input .ordreRecette').last().attr('value');
+
+        if (!isInt(lastOrdre)) {
+            lastOrdre = 0;
+        }
+
+        var ordreIncr = parseInt(lastOrdre, 10) + 1;
+        $("#ordre").attr('value', ordreIncr);
+    }
+
+    function isInt(value) {
+        return !isNaN(value) &&
+            parseInt(Number(value)) == value &&
+            !isNaN(parseInt(value, 10));
     }
 </script>
 </body>

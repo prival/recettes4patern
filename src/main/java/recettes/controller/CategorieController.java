@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import recettes.model.Categorie;
 import recettes.service.CategorieService;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -47,19 +48,23 @@ public class CategorieController {
 
     @PostMapping("categorie/update")
     public String updateCategorie(
-            @ModelAttribute("categorie") Categorie categorie) {
+            HttpSession session, @ModelAttribute("categorie") Categorie categorie) {
 
         categorieService.createCategorie(categorie);
+
+        session.setAttribute("categoriesMenu", categorieService.getAllCategories());
 
         return "redirect:/categorie";
     }
 
 
-    @GetMapping("categorie/delete/{id}")
+    @PostMapping("categorie/delete/{id}")
     public String deleteCategorie(
-            @PathVariable long id) {
+            HttpSession session, @PathVariable long id) {
 
         categorieService.deleteCategorie(id);
+
+        session.setAttribute("categoriesMenu", categorieService.getAllCategories());
 
         return "redirect:/categorie";
     }

@@ -9,14 +9,12 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
 </head>
 <body>
-<div id="mySidenav" class="sidenav" w3-include-html="../menu.html"></div>
+
+<div th:insert="menu :: sidenav"></div>
 
 <!-- page -->
 <div class="main">
-    <p th:text="'Hello, ' + ${name} + '!'" />
-    <form th:action="@{/logout}" method="post">
-        <input type="submit" value="Déconnexion"/>
-    </form>
+    <p th:text="Bienvenue" />
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

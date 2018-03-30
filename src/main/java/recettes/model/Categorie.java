@@ -17,7 +17,8 @@ public class Categorie {
     @Column(name = "ordre")
     private int ordre;
 
-    @OneToMany(mappedBy = "categorie", cascade = {CascadeType.ALL})
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "categorie")
+    @OrderBy("ordre")
     private List<Recette> recettes;
 
     protected Categorie() {

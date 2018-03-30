@@ -40,7 +40,7 @@
                 <p th:each="ingredient, stat : *{ingredients}">
                     <input type="hidden" th:field="${recette.ingredients[__${stat.index}__].id}" />
                     <input type="hidden" th:field="${recette.ingredients[__${stat.index}__].recette}" />
-                    <input type="text" th:name="ingredientName" th:field="${recette.ingredients[__${stat.index}__].libelle}" style="width:30em;" />
+                    <input type="text" th:field="${recette.ingredients[__${stat.index}__].libelle}" style="width:30em;" />
                 </p>
             </div>
 
@@ -53,7 +53,7 @@
                 <p th:each="etape, stat : *{etapes}" th:object="${recette.etapes[__${stat.index}__]}">
                     <input type="hidden" th:field="${recette.etapes[__${stat.index}__].id}" />
                     <input type="hidden" th:field="${recette.etapes[__${stat.index}__].recette}" />
-                    <input type="text" th:name="etapeName" th:field="${recette.etapes[__${stat.index}__].libelle}" style="width:30em;" />
+                    <input type="text" th:field="${recette.etapes[__${stat.index}__].libelle}" style="width:30em;" />
                 </p>
             </div>
 

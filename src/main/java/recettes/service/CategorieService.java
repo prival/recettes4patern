@@ -2,6 +2,7 @@ package recettes.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,7 +24,11 @@ public class CategorieService {
     CategorieRepository categorieRepository;
 
     public List<Categorie> getAllCategories() {
-        return categorieRepository.findAll();
+        return categorieRepository.findAll(sortByOrdreAsc());
+    }
+
+    private Sort sortByOrdreAsc() {
+        return new Sort(Sort.Direction.ASC, "ordre");
     }
 
     public Categorie getCategorieById(@PathVariable(value = "id") Long id) {

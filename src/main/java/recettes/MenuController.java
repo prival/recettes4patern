@@ -1,52 +1,33 @@
 package recettes;
 
+import org.aspectj.weaver.World;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import recettes.model.Categorie;
 import recettes.service.CategorieService;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
 public class MenuController {
 
+    @Autowired
+    CategorieService categorieService;
+
+    @RequestMapping("/")
+    public String index() {
+        return "redirect:/index";
+    }
+
     @GetMapping("/index")
-    public String index(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
+    public String index(HttpSession session) {
+        session.setAttribute("categoriesMenu", categorieService.getAllCategories());
         return "index";
-    }
-
-    @GetMapping("/plats")
-    public String plats() {
-        return "plats";
-    }
-
-    @GetMapping("/desserts")
-    public String desserts() {
-        return "desserts";
-    }
-
-    @GetMapping("/pate_gyozas")
-    public String pate_gyozas() {
-        return "pate_gyozas";
-    }
-
-    @GetMapping("/brocoli_oignons")
-    public String brocoli_oignons() {
-        return "brocoli_oignons";
-    }
-
-    @GetMapping("/tarte_pommes")
-    public String tarte_pommes() {
-        return "tarte_pommes";
-    }
-
-    @GetMapping("/mousse_chocolat")
-    public String mousse_chocolat() {
-        return "mousse_chocolat";
     }
 
 }

@@ -11,6 +11,7 @@ import recettes.model.Recette;
 import recettes.service.CategorieService;
 import recettes.service.RecetteService;
 
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +40,7 @@ public class RecetteController {
 
     @RequestMapping(value = { "/addRecette" }, method = RequestMethod.POST)
     public String saveRecette(
+            HttpSession session,
             @ModelAttribute("recette") Recette recette,
             @RequestParam(value = "ingredientName") String[] ingredientsName,
             @RequestParam(value = "etapeName") String[] etapesName) {
@@ -62,11 +64,9 @@ public class RecetteController {
             }
         }
 
-        recette.setOrdre(1);
-
         recetteService.createRecette(recette);
 
-        return "redirect:/admin";
+        return "redirect:/index";
     }
 
 
@@ -94,9 +94,27 @@ public class RecetteController {
 
     @PostMapping("/recette/update/{id}")
     public String updateRecette(
-            @ModelAttribute("recette") Recette recette) {
+            @ModelAttribute("recette") Recette recette,
+            @RequestParam(value = "ingredientName") String[] ingredientsName,
+            @RequestParam(value = "etapeName") String[] etapesName) {
 
-        recetteService.createRecette(recette);
+        if (ingredientsName != null) {
+            for (int i = 0; i < ingredientsName.length; i++) {
+                int ordre = i+1;
+                Ingredient ingredient = new Ingredient(ingredientsName[i], ordre);
+                recette.addIngredient(ingredient);
+            }
+        }
+
+        if (etapesName != null) {
+            for (int i = 0; i < etapesName.length; i++) {
+                int ordre = i+1;
+                Etape etape = new Etape(etapesName[i], ordre);
+                recette.addEtape(etape);
+            }
+        }
+
+//        recetteService.createRecette(recette);
 
         return "redirect:/recette/{id}";
     }
@@ -104,7 +122,10 @@ public class RecetteController {
 
     @PostMapping("/recette/delete/{id}")
     public String deleteRecette(
+            HttpSession session,
             @PathVariable  long id) {
+
+        // TODO : faire par recette pour si besoin enlever la recette de la session
 
         recetteService.deleteRecette(id);
 
