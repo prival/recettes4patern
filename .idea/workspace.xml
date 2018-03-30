@@ -2,35 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573df8b-687b-42e7-84c8-5444795f0376" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery-ui.structure.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery-ui.theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-ui.min.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/HelloController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/MenuController.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/MenuController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/controller/CategorieController.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/controller/CategorieController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/controller/RecetteController.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/controller/RecetteController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/model/Categorie.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/model/Categorie.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/repository/CategorieRepository.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/repository/CategorieRepository.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/service/CategorieService.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/service/CategorieService.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/admin.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/admin.html" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/templates/categorie.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/categorie.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/categorieEdit.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/categorieEdit.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/menu.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/menu.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/recetteEdit.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/recetteEdit.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/HelloController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/MenuController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/controller/CategorieController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/CategorieController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/model/Categorie.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/model/Categorie.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/model/Recette.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/model/Recette.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/repository/RecetteRepository.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/repository/RecetteRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/service/CategorieService.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/service/CategorieService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/categorie.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/categorie.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recette.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -81,18 +64,78 @@
       <file leaf-file-name="recette.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="53" column="15" lean-forward="true" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+            <state relative-caret-position="102">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecetteController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RecetteController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="131" column="33" lean-forward="true" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
+            <state relative-caret-position="187">
+              <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categorie.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/categorie.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recetteEdit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="70" lean-forward="false" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categorieEdit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editRecette.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editRecette.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="62" column="70" lean-forward="false" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -104,54 +147,6 @@
             <state relative-caret-position="153">
               <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/recettes/model/Ingredient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="65" lean-forward="true" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecetteService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-              <folding>
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategorieService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/recettes/service/CategorieService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-              <folding>
-                <element signature="e#877#878#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -181,16 +176,6 @@
                 <element signature="e#1254#1255#0" expanded="true" />
                 <element signature="e#1356#1357#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -732,21 +717,14 @@
         <option value="$PROJECT_DIR$/src/main/java/component/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/component/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" />
         <option value="$PROJECT_DIR$/test_recette/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/categoriesEdit.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/config/StaticResourceConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/service/CategorieService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/categorie.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/CategorieController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/menu.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java" />
@@ -754,6 +732,13 @@
         <option value="$PROJECT_DIR$/src/main/java/recettes/model/Recette.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/model/Categorie.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/categorie.html" />
       </list>
     </option>
   </component>
@@ -871,6 +856,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recettes4patern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recettes4patern" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recettes4patern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recettes4patern" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -889,6 +892,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\recettes4patern\src\main\resources\static\js" />
+      <recent name="C:\workspace\recettes4patern\src\main\resources\static\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\appli\src\main\resources\templates" />
       <recent name="C:\workspace\appli\src\main\resources\static\js" />
@@ -1284,18 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#2;n#p#0;n#div#3;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#2;n#p#0;n#div#5;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1312,29 +1307,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editRecette.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1350,34 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/categorie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="71" lean-forward="true" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -1402,14 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="53" column="15" lean-forward="true" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1443,10 +1384,10 @@
         <state relative-caret-position="317">
           <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
           <folding>
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#982#983#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1515,8 +1456,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="131" column="33" lean-forward="true" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
+        <state relative-caret-position="187">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editRecette.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="62" column="70" lean-forward="false" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="70" lean-forward="false" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/categorie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
           <folding />
         </state>
       </provider>
