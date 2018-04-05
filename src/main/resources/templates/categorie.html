@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div th:insert="menu :: sidenav"></div>
+<div id="menu" th:insert="menu :: sidenav"></div>
 
 <div class="main">
 
@@ -19,6 +19,8 @@
         <table>
         <tbody id="sortable">
         <tr th:each="categorie, stat : ${categories}" th:id="|tr_id_${categorie.libelle}|">
+            <input type="hidden" class="classId" th:value="${categorie.id}" />
+            <input type="hidden" class="classLibelle" th:value="${categorie.libelle}" />
             <input type="hidden" class="classOrdre" th:value="${categorie.ordre}" />
             <td>
                 <a name="editer" th:id="|id_${categorie.libelle}|" th:href="@{|categorie/edit/${categorie.id}|}">
@@ -62,15 +64,60 @@
             start: function(event, ui) {
                 ui.item.startPos = ui.item.index();
             },
-            stop: function (event, ui) {
-                var startInput = $('.classOrdre').get(ui.item.startPos);
-                var startOrdre = $(startInput).attr('value');
+            update: function (event, ui) {
 
-                var finalInput = $('.classOrdre').get(ui.item.index());
-                var finalOrdre = $(finalInput).attr('value');
+                var startInputId = $('.classId').get(ui.item.startPos);
+                var startId = $(startInputId).attr('value');
+
+                var startInputLibelle = $('.classLibelle').get(ui.item.startPos);
+                var startLibelle = $(startInputLibelle).attr('value');
+
+                var startInputOrdre = $('.classOrdre').get(ui.item.startPos);
+                var startOrdre = $(startInputOrdre).attr('value');
+
+                var finalInputId = $('.classId').get(ui.item.index());
+                var finalId = $(finalInputId).attr('value');
+
+                var finalInputLibelle = $('.classLibelle').get(ui.item.index());
+                var finalLibelle = $(finalInputLibelle).attr('value');
+
+                var finalInputOrdre = $('.classOrdre').get(ui.item.index());
+                var finalOrdre = $(finalInputOrdre).attr('value');
 
                 console.log("Start position: " + startOrdre);
                 console.log("New position: " + finalOrdre);
+
+                $(startInputOrdre).attr('value', finalOrdre);
+                $(finalInputOrdre).attr('value', startOrdre);
+
+                var data = [
+                    {
+                        "id": startId,
+                        "libelle": startLibelle,
+                        "ordre": finalOrdre
+                    },
+                    {
+                        "id": finalId,
+                        "libelle": finalLibelle,
+                        "ordre": startOrdre
+                    }
+                ];
+
+                console.log("JSON stringify: " + JSON.stringify(data));
+
+                $.ajax({
+                    data: JSON.stringify(data),
+                    type: 'POST',
+                    contentType: "application/json",
+                    url: "modifierOrdreCategorie",
+                    success: function (data) {
+                        console.log("Succes Ajax");
+                    },
+                    error: function (data) {
+                        console.log("Erreur Ajax");
+                        $("#menu").load("menu");
+                    }
+                });
             }
     });
   });

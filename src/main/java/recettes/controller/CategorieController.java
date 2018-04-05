@@ -1,6 +1,8 @@
 package recettes.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.RequestEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +10,7 @@ import recettes.model.Categorie;
 import recettes.service.CategorieService;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -67,6 +70,22 @@ public class CategorieController {
         session.setAttribute("categoriesMenu", categorieService.getAllCategories());
 
         return "redirect:/categorie";
+    }
+
+
+    @PostMapping("modifierOrdreCategorie")
+    public void modifierOrdreCategorie(
+            @Valid @RequestBody List<Categorie> categories,
+            HttpSession session
+    ) {
+        categorieService.createCategorie(categories.get(0));
+        categorieService.createCategorie(categories.get(1));
+//        categorieService.createCategorie(id);
+
+        session.setAttribute("categoriesMenu", categorieService.getAllCategories());
+
+//        return ResponseEntity.ok();
+//        return "redirect:/categorie";
     }
 
 }
