@@ -10,24 +10,22 @@
 </head>
 <body>
 
+<!-- menu -->
 <div th:insert="menu :: sidenav"></div>
 
 <!-- page -->
 <div class="main">
-    <p>
+    <h3>
         Détail de la recette
-    </p>
+    </h3>
 
+    <!-- recette -->
     <div th:object="${recette}">
 
-        <div class="form-group">
-            <span th:text="${recette.categorie.id}" />
-        </div>
-
-        <p>Titre :</p>
+        <h5>Titre :</h5>
         <span th:text="${recette.libelle}" />
 
-        <p>Ingrédients :</p>
+        <h5>Ingrédients :</h5>
 
         <div id="ingredients">
             <p th:each="ingredient, stat : *{ingredients}">
@@ -35,7 +33,7 @@
             </p>
         </div>
 
-        <p>Etapes :</p>
+        <h5>Etapes :</h5>
 
         <div id="etapes">
             <p th:each="etape, stat : *{etapes}">
@@ -45,6 +43,7 @@
 
     </div>
 
+    <!-- partie admin -->
     <div th:if="${session.User != null}">
         <a th:href="@{|/recette/edit/${recette.id}|}" class="btn btn-primary">Editer</a>
         <form th:action="@{|/recette/delete/${recette.id}|}"

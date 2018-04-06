@@ -6,9 +6,13 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import recettes.model.Recette;
 
+import javax.transaction.Transactional;
+
 @Repository
 public interface RecetteRepository extends JpaRepository<Recette, Long> {
-//    @Modifying
-//    @Query("delete from Recette r where r.id = ?1")
-//    void deleteById(Long entityId);
+
+    @Transactional
+    @Modifying
+    @Query("update Recette set ordre = ?1 where id = ?2")
+    void updateRecette(int ordre, long id);
 }

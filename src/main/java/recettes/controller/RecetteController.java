@@ -12,9 +12,13 @@ import recettes.service.CategorieService;
 import recettes.service.RecetteService;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Controller pour les recettes.
+ */
 @Controller
 public class RecetteController {
 
@@ -50,17 +54,27 @@ public class RecetteController {
 
         if (ingredientsName != null) {
             for (int i = 0; i < ingredientsName.length; i++) {
-                int ordre = i+1;
-                Ingredient ingredient = new Ingredient(ingredientsName[i], ordre);
-                recette.addIngredient(ingredient);
+                String name = ingredientsName[i];
+
+                // vérifie que l'ingrédient n'est pas vide
+                if (!name.trim().equals("")) {
+                    int ordre = i + 1;
+                    Ingredient ingredient = new Ingredient(name, ordre);
+                    recette.addIngredient(ingredient);
+                }
             }
         }
 
         if (etapesName != null) {
             for (int i = 0; i < etapesName.length; i++) {
-                int ordre = i+1;
-                Etape etape = new Etape(etapesName[i], ordre);
-                recette.addEtape(etape);
+                String name = etapesName[i];
+
+                // vérifie que l'étape n'est pas vide
+                if (!name.trim().equals("")) {
+                    int ordre = i + 1;
+                    Etape etape = new Etape(etapesName[i], ordre);
+                    recette.addEtape(etape);
+                }
             }
         }
 
@@ -132,4 +146,19 @@ public class RecetteController {
         return "redirect:/admin";
     }
 
+
+    @PostMapping("modifierOrdreRecettes")
+    public void modifierOrdreRecette(
+            @Valid @RequestBody List<Recette> recettes,
+            HttpSession session
+    ) {
+        recetteService.updateRecette(recettes.get(0).getOrdre(), recettes.get(0).getId());
+        recetteService.updateRecette(recettes.get(1).getOrdre(), recettes.get(1).getId());
+//        categorieService.createCategorie(id);
+
+        session.setAttribute("categoriesMenu", categorieService.getAllCategories());
+
+//        return ResponseEntity.ok();
+//        return "redirect:/categorie";
+    }
 }

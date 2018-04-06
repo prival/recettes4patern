@@ -10,16 +10,17 @@
 </head>
 <body>
 
+<!-- menu -->
 <div th:insert="menu :: sidenav"></div>
 
+<!-- page -->
 <div class="main">
 
     <div>
         <form th:action="@{|/recette/update/${recette.id}|}" th:object="${recette}" method="post">
             <input type="hidden" th:field="*{id}" />
-            <p>
-                Modifier une recette
-            </p>
+
+            <h3>Modifier une recette</h3>
 
             <div class="form-group">
                 <label for="categorie">Choisir une catégorie :</label>

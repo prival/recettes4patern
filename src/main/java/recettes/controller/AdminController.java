@@ -16,6 +16,9 @@ import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Controller pour la partie Admin.
+ */
 @Controller
 public class AdminController {
 
@@ -34,8 +37,14 @@ public class AdminController {
         session.setAttribute("User", user);
 
         List<Categorie> categories = categorieService.getAllCategories();
+
+        // pour choisir une catégorie en créant une recette
         model.addAttribute("categories", categories);
 
+        // on remet les catégories en session ....
+        session.setAttribute("categoriesMenu", categories);
+
+        // la recette à créer
         Recette recette = new Recette();
         model.addAttribute("recette", recette);
 

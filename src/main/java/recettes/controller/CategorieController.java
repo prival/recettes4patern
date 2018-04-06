@@ -13,6 +13,9 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * Controller pour les catégories.
+ */
 @Controller
 public class CategorieController {
 
@@ -20,15 +23,25 @@ public class CategorieController {
     CategorieService categorieService;
 
 
-    @GetMapping("categorie")
-    public String categorie(Model model) {
+
+    @GetMapping("categorie/{id}")
+    public String categorieId(@PathVariable long id, Model model) {
+        Categorie categorie = categorieService.getCategorieById(id);
+
+        model.addAttribute("categorie", categorie);
+
+        return "categorie";
+    }
+
+    @GetMapping("categories")
+    public String categories(Model model) {
         List<Categorie> categories = categorieService.getAllCategories();
         model.addAttribute("categories", categories);
 
         Categorie categorie = new Categorie("", 1);
         model.addAttribute("categorie", categorie);
 
-        return "categorie";
+        return "categories";
     }
 
     @RequestMapping(value = { "/categorie/add" }, method = RequestMethod.POST)

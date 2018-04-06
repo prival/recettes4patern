@@ -27,6 +27,8 @@ public class RecetteService {
         return recetteRepository.save(recette);
     }
 
+    public void updateRecette(int ordre, long id) { recetteRepository.updateRecette(ordre, id);}
+
 //    public void deleteRecette(@Valid @RequestBody Recette recette) {
     public void deleteRecette(@Valid @RequestBody long id) {
 //        recetteRepository.delete(recette);

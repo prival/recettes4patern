@@ -13,6 +13,9 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 import java.security.Security;
 
+/**
+ * Gestion de la sécurité.
+ */
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -26,9 +29,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+        http.csrf().disable();
         http
                 .authorizeRequests()
                 .antMatchers("/admin").authenticated()
+                .antMatchers("/categorie/*").authenticated()
                 .antMatchers("/*").permitAll()
                 .and()
                 .formLogin()
@@ -37,7 +43,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .logout()
                 .permitAll();
-        http.csrf().disable();
     }
 
     @Bean

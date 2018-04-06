@@ -9,6 +9,10 @@ import recettes.repository.CategorieRepository;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * Classe pour récupérer en REST les infos des catégories,
+ * pas utilisé actuellement
+ */
 @RestController
 @RequestMapping("/api")
 public class CategorieApi {

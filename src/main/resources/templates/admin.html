@@ -10,16 +10,18 @@
 </head>
 <body>
 
+<!-- menu -->
 <div th:insert="menu :: sidenav"></div>
 
+<!-- page -->
 <div class="main">
 
 <div>
     <form th:action="@{/addRecette}" onsubmit="searchOrdreRecette();" th:object="${recette}" method="POST">
         <input type="hidden" id="ordre" th:field="*{ordre}" />
-    <p>
+    <h3>
         Définir une recette
-    </p>
+    </h3>
 
     <div class="form-group">
         <label for="categorie">Choisir une catégorie :</label>
@@ -63,7 +65,7 @@
     <br/>
 
     <div>
-        <a id="goGestionCategories" th:href="categorie">Gérer les catégories</a>
+        <a id="goGestionCategories" th:href="categories">Gérer les catégories</a>
     </div>
 
 </div>
@@ -73,23 +75,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
+
+    // ajouter un champ pour remplir un ingrédient
     function addIngredient() {
         $("#ingredients").append('<p>'
                     + '<input type="text" name="ingredientName" style="width:30em;" />'
                     + '</p>');
     }
 
-
+    // ajouter un champ pour remplir une étape
     function addEtape() {
         $("#etapes").append('<p>'
                     + '<input type="text" name="etapeName" style="width:30em;" />'
                     + '</p>');
     }
 
+    // valorise l'ordre de la recette créé (utilisé pour trier les recettes)
     function searchOrdreRecette() {
         var categorieId = $('#categorie').find(":selected").val();
         var sIdCategorieMenu = '#categorie' + categorieId;
-        var lastOrdre = $(sIdCategorieMenu).find('input .ordreRecette').last().attr('value');
+        var lastOrdre = $(sIdCategorieMenu).children('p:last').children('input').attr('value');
 
         if (!isInt(lastOrdre)) {
             lastOrdre = 0;
@@ -99,6 +104,7 @@
         $("#ordre").attr('value', ordreIncr);
     }
 
+    // vérifie si une valeur est un entier
     function isInt(value) {
         return !isNaN(value) &&
             parseInt(Number(value)) == value &&
