@@ -17,7 +17,7 @@
 <div class="main">
 
 <div>
-    <form th:action="@{/addRecette}" onsubmit="searchOrdreRecette();" th:object="${recette}" method="POST">
+    <form th:action="@{/addRecette}" onsubmit="searchOrdreRecette();" th:object="${recette}" method="post">
         <input type="hidden" id="ordre" th:field="*{ordre}" />
     <h3>
         Définir une recette
@@ -56,7 +56,7 @@
     </div>
 
     <div>
-        <input id="buttonCreer" type="submit" value="Créer" />
+        <input id="buttonCreer" class="btn btn-success" type="submit" value="Créer" />
     </div>
 
     </form>
@@ -67,6 +67,15 @@
     <div>
         <a id="goGestionCategories" th:href="categories">Gérer les catégories</a>
     </div>
+
+    <br/>
+    <br/>
+
+    <form th:action="@{/export}" method="post">
+        <div>
+            <input id="buttonExporter" class="btn btn-warning" type="submit" value="Exporter" />
+        </div>
+    </form>
 
 </div>
 
