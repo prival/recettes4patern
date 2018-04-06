@@ -15,23 +15,21 @@
 
 <!-- page -->
 <div class="main">
-    <h3>
-        Détail de la recette
-    </h3>
 
     <!-- recette -->
     <div th:object="${recette}">
 
-        <h5>Titre :</h5>
-        <span th:text="${recette.libelle}" />
+        <h3><span th:text="${recette.libelle}" /></h3>
+
+        <br />
 
         <h5>Ingrédients :</h5>
 
-        <div id="ingredients">
-            <p th:each="ingredient, stat : *{ingredients}">
+        <ul id="ingredients">
+            <li th:each="ingredient, stat : *{ingredients}">
                 <span th:text="${ingredient.libelle}" />
-            </p>
-        </div>
+            </li>
+        </ul>
 
         <h5>Etapes :</h5>
 
@@ -46,6 +44,10 @@
     <!-- partie admin -->
     <div th:if="${session.User != null}">
         <a th:href="@{|/recette/edit/${recette.id}|}" class="btn btn-primary">Editer</a>
+
+        <br />
+        <br />
+
         <form th:action="@{|/recette/delete/${recette.id}|}"
               onsubmit="return confirm('Supprimer la recette ?');"
               method="post">

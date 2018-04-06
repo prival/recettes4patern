@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573df8b-687b-42e7-84c8-5444795f0376" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/ExportController.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/admin.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/admin.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/repository/IngredientRepository.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/repository/IngredientRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/service/EtapeService.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/service/EtapeService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/service/IngredientService.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/service/IngredientService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recette.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -57,6 +49,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="recette.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExportController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExportController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/ExportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="742">
               <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -656,7 +658,6 @@
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/categories.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/categorie.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java" />
@@ -669,6 +670,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/ExportController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
       </list>
     </option>
   </component>
@@ -1271,14 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1446,11 +1440,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/ExportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="742">
           <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
