@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573df8b-687b-42e7-84c8-5444795f0376" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/categories.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/api/CategorieApi.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/api/CategorieApi.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/config/StaticResourceConfig.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/config/StaticResourceConfig.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/config/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/config/WebSecurityConfig.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/controller/AdminController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/controller/CategorieController.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/controller/CategorieController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/controller/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/controller/RecetteController.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/controller/RecetteController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/repository/RecetteRepository.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/repository/RecetteRepository.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/recettes/service/RecetteService.class" afterPath="$PROJECT_DIR$/out/production/classes/recettes/service/RecetteService.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/admin.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/admin.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/categorie.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/categorie.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/categorieEdit.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/categorieEdit.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/editRecette.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/editRecette.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/menu.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/menu.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/recette.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/recette.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/recetteEdit.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/recetteEdit.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/api/CategorieApi.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/api/CategorieApi.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/config/StaticResourceConfig.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/config/StaticResourceConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/config/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/config/WebSecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/controller/CategorieController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/CategorieController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/repository/RecetteRepository.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/repository/RecetteRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java" afterPath="$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/categorie.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/categorie.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/categorieEdit.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recette.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/desserts.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/plats.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -107,8 +73,8 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+            <state relative-caret-position="96">
+              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -162,16 +128,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editRecette.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editRecette.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -1037,7 +993,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1052,7 +1007,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1166,13 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/plats.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1503,8 +1451,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="96">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/plats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding />
         </state>
       </provider>
