@@ -5,15 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import recettes.model.Categorie;
-import recettes.model.Etape;
-import recettes.model.Ingredient;
 import recettes.model.Recette;
 import recettes.service.CategorieService;
 import recettes.service.RecetteService;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -45,38 +42,7 @@ public class RecetteController {
     @RequestMapping(value = { "/addRecette" }, method = RequestMethod.POST)
     public String saveRecette(
             HttpSession session,
-            @ModelAttribute("recette") Recette recette,
-            @RequestParam(value = "ingredientName") String[] ingredientsName,
-            @RequestParam(value = "etapeName") String[] etapesName) {
-
-        recette.setIngredients(new ArrayList<Ingredient>());
-        recette.setEtapes(new ArrayList<Etape>());
-
-        if (ingredientsName != null) {
-            for (int i = 0; i < ingredientsName.length; i++) {
-                String name = ingredientsName[i];
-
-                // vérifie que l'ingrédient n'est pas vide
-                if (!name.trim().equals("")) {
-                    int ordre = i + 1;
-                    Ingredient ingredient = new Ingredient(name, ordre);
-                    recette.addIngredient(ingredient);
-                }
-            }
-        }
-
-        if (etapesName != null) {
-            for (int i = 0; i < etapesName.length; i++) {
-                String name = etapesName[i];
-
-                // vérifie que l'étape n'est pas vide
-                if (!name.trim().equals("")) {
-                    int ordre = i + 1;
-                    Etape etape = new Etape(etapesName[i], ordre);
-                    recette.addEtape(etape);
-                }
-            }
-        }
+            @ModelAttribute("recette") Recette recette) {
 
         recetteService.createRecette(recette);
 
@@ -92,14 +58,6 @@ public class RecetteController {
 
         Recette recette = recetteService.getRecetteById(id);
 
-        if (recette.getIngredients() == null || recette.getIngredients().isEmpty()) {
-            recette.addIngredient(new Ingredient("", 1));
-        }
-
-        if (recette.getEtapes() == null || recette.getEtapes().isEmpty()) {
-            recette.addEtape(new Etape("", 1));
-        }
-
         model.addAttribute("recette", recette);
 
         return "recetteEdit";
@@ -108,27 +66,9 @@ public class RecetteController {
 
     @PostMapping("/recette/update/{id}")
     public String updateRecette(
-            @ModelAttribute("recette") Recette recette,
-            @RequestParam(value = "ingredientName") String[] ingredientsName,
-            @RequestParam(value = "etapeName") String[] etapesName) {
+            @ModelAttribute("recette") Recette recette) {
 
-        if (ingredientsName != null) {
-            for (int i = 0; i < ingredientsName.length; i++) {
-                int ordre = i+1;
-                Ingredient ingredient = new Ingredient(ingredientsName[i], ordre);
-                recette.addIngredient(ingredient);
-            }
-        }
-
-        if (etapesName != null) {
-            for (int i = 0; i < etapesName.length; i++) {
-                int ordre = i+1;
-                Etape etape = new Etape(etapesName[i], ordre);
-                recette.addEtape(etape);
-            }
-        }
-
-//        recetteService.createRecette(recette);
+        recetteService.createRecette(recette);
 
         return "redirect:/recette/{id}";
     }

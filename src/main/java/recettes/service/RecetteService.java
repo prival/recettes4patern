@@ -5,10 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import recettes.exception.ResourceNotFoundException;
-import recettes.model.Categorie;
-import recettes.model.Ingredient;
 import recettes.model.Recette;
-import recettes.repository.CategorieRepository;
 import recettes.repository.RecetteRepository;
 
 import javax.validation.Valid;

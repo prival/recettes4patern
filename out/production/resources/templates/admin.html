@@ -17,7 +17,7 @@
 <div class="main">
 
 <div>
-    <form th:action="@{/addRecette}" onsubmit="searchOrdreRecette();" th:object="${recette}" method="post">
+    <form th:action="@{/addRecette}" onsubmit="return valideRecette();" th:object="${recette}" method="post">
         <input type="hidden" id="ordre" th:field="*{ordre}" />
     <h3>
         Définir une recette
@@ -31,29 +31,23 @@
     </div>
 
         <div>Titre :</div>
-        <input type="text" id="libelle" th:field="*{libelle}" style="width:30em;" />
-
-    <div>Ingrédients :</div>
-
-        <div id="ingredients">
-            <p th:each="currentIngredient, stat : *{ingredients}">
-                <input type="text" th:name="ingredientName" th:value="${currentIngredient.libelle}" style="width:30em;" />
-                <button id="ingredientButtonPlus" type="button" onclick="addIngredient();" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-plus"></span> Plus
-                </button>
-            </p>
+        <div>
+            <input type="text" id="libelle" th:field="*{libelle}" style="width:30em;" />
         </div>
 
-    <div>Etapes :</div>
+        <br />
 
-    <div id="etapes">
-        <p th:each="currentEtape, stat : *{etapes}">
-            <input type="text" th:name="etapeName" th:value="${currentEtape.libelle}" style="width:30em;" />
-            <button id="etapeButtonPlus" type="button" onclick="addEtape();" class="btn btn-default btn-sm">
-                <span class="glyphicon glyphicon-plus"></span> Plus
-            </button>
-        </p>
-    </div>
+        <div>Ingrédients :</div>
+        <div>
+            <textarea rows = "6" cols = "100" th:field="*{ingredients}"></textarea>
+        </div>
+
+        <br />
+
+        <div>Etapes :</div>
+        <div>
+            <textarea rows = "6" cols = "100" th:field="*{etapes}"></textarea>
+        </div>
 
     <div>
         <input id="buttonCreer" class="btn btn-success" type="submit" value="Créer" />
@@ -85,18 +79,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
 
-    // ajouter un champ pour remplir un ingrédient
-    function addIngredient() {
-        $("#ingredients").append('<p>'
-                    + '<input type="text" name="ingredientName" style="width:30em;" />'
-                    + '</p>');
-    }
+    function valideRecette() {
 
-    // ajouter un champ pour remplir une étape
-    function addEtape() {
-        $("#etapes").append('<p>'
-                    + '<input type="text" name="etapeName" style="width:30em;" />'
-                    + '</p>');
+        if ($("#libelle").val().trim() == "") {
+            alert("Le titre de la recette ne doit pas être vide.");
+            return false;
+        }
+
+        searchOrdreRecette();
+        return true;
     }
 
     // valorise l'ordre de la recette créé (utilisé pour trier les recettes)

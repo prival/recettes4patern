@@ -23,21 +23,13 @@
 
         <br />
 
-        <h5>Ingrédients :</h5>
+        <pre><span th:text="${recette.ingredients}" style="font-family:arial;font-size:100%;" /></pre>
 
-        <ul id="ingredients">
-            <li th:each="ingredient, stat : *{ingredients}">
-                <span th:text="${ingredient.libelle}" />
-            </li>
-        </ul>
+        <br />
 
-        <h5>Etapes :</h5>
+        <pre><span th:text="${recette.etapes}" style="font-family:arial;font-size:100%;" /></pre>
 
-        <div id="etapes">
-            <p th:each="etape, stat : *{etapes}">
-                <span th:text="${etape.libelle}" />
-            </p>
-        </div>
+        <br />
 
     </div>
 

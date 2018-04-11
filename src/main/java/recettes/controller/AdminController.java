@@ -6,14 +6,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import recettes.model.Categorie;
-import recettes.model.Etape;
-import recettes.model.Ingredient;
 import recettes.model.Recette;
 import recettes.service.CategorieService;
 import recettes.service.RecetteService;
 
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

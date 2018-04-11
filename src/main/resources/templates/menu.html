@@ -15,12 +15,12 @@
         </a>
         <input type="hidden" class="ordreCategorie" th:value="${categorie.ordre}" />
 
-        <p th:each="recette : ${categorie.recettes}" th:name="${recette.libelle}">
+        <span th:each="recette : ${categorie.recettes}" th:name="${recette.libelle}">
             <a class="menu-second" th:href="@{|/recette/${recette.id}|}" th:name="idRecette">
-                <span th:text="${recette.libelle}"></span>
+                    <span th:text="${recette.libelle}" style="font-family:arial;font-size:85%;"></span>
             </a>
             <input type="hidden" class="ordreRecette" th:id="|ordre${recette.id}|" th:value="${recette.ordre}" />
-        </p>
+        </span>
     </div>
 
     <br/>
