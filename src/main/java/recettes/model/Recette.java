@@ -16,9 +16,11 @@ public class Recette {
     private String libelle;
 
     @Column(name = "ingredients")
+    @Type(type="text")
     private String ingredients;
 
     @Column(name = "etapes")
+    @Type(type="text")
     private String etapes;
 
     @Column(name = "ordre")
