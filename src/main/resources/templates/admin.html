@@ -94,7 +94,7 @@
     function searchOrdreRecette() {
         var categorieId = $('#categorie').find(":selected").val();
         var sIdCategorieMenu = '#categorie' + categorieId;
-        var lastOrdre = $(sIdCategorieMenu).children('p:last').children('input').attr('value');
+        var lastOrdre = $(sIdCategorieMenu).children('span:last').children('input').attr('value');
 
         if (!isInt(lastOrdre)) {
             lastOrdre = 0;
@@ -102,6 +102,8 @@
 
         var ordreIncr = parseInt(lastOrdre, 10) + 1;
         $("#ordre").attr('value', ordreIncr);
+
+        return ordreIncr;
     }
 
     // vérifie si une valeur est un entier

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573df8b-687b-42e7-84c8-5444795f0376" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.2/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.2/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.2/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.2/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -52,7 +56,7 @@
       <file leaf-file-name="recette.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="116">
               <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding />
             </state>
@@ -62,17 +66,17 @@
       <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="114" selection-end-column="7" />
+            <state relative-caret-position="949">
+              <caret line="110" column="27" lean-forward="true" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
+            <state relative-caret-position="470">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
@@ -82,7 +86,7 @@
       <file leaf-file-name="CategorieApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recettes/api/CategorieApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="323">
               <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding />
             </state>
@@ -92,7 +96,7 @@
       <file leaf-file-name="CategorieRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="170">
               <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
@@ -102,7 +106,7 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="612">
               <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding />
             </state>
@@ -112,7 +116,7 @@
       <file leaf-file-name="AgendaController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/AgendaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="153">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -121,21 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agenda.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="agenda.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/agenda.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recetteEdit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -171,7 +165,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\prival\.gradle\wrapper\dists\gradle-4.2-bin\cl9xe1l8k8ophj72k8rv6xbu7\gradle-4.2" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -495,7 +489,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6096321436000" />
+        <entry key="$PROJECT_DIR$" value="6098569839596" />
         <entry key="$PROJECT_DIR$/build.gradle" value="418699657" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="272408847" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="607306853" />
@@ -560,78 +554,78 @@
               <option name="name" value="recettes4patern" />
               <option name="projectBuildClasspath">
                 <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-base-services-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-base-services-groovy-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-build-cache-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-cli-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-kotlin-dsl-tooling-builders-0.11.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-runtime-api-info-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-core-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-core-api-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-model-core-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-resources-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-native-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-model-groovy-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-launcher-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/groovy-all-2.4.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-docs-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-installation-beacon-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-jvm-services-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-kotlin-dsl-0.11.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-kotlin-dsl-tooling-builders-0.11.1.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-kotlin-dsl-tooling-models-0.11.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-launcher-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-logging-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-messaging-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-model-core-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-model-groovy-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-native-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-persistent-cache-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-process-services-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-resources-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-runtime-api-info-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-tooling-api-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-wrapper-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-base-services-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-build-cache-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-base-services-groovy-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-persistent-cache-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/ant-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-jvm-services-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-installation-beacon-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-kotlin-dsl-0.11.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/ant-launcher-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-logging-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-core-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-docs-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/gradle-process-services-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-plugins-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-play-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-tooling-api-builders-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-composite-builds-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-publish-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ear-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-antlr-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-workers-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/groovy-all-2.4.11.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-announce-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-jacoco-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ivy-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-reporting-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-scala-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-javascript-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-dependency-management-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-code-quality-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-http-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-antlr-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-build-cache-http-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ide-play-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-scala-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-java-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-test-kit-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-build-init-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-osgi-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-gcs-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-plugin-use-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-jvm-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ide-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-base-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-plugin-development-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-diagnostics-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-build-comparison-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-build-init-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-code-quality-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-composite-builds-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-dependency-management-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-diagnostics-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ear-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ide-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ide-native-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-sftp-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ide-play-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-ivy-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-jacoco-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-javascript-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-groovy-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-native-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-maven-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-testing-native-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-testing-jvm-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-jvm-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-testing-base-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-signing-4.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-s3-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-java-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-jvm-4.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-native-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-language-scala-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-maven-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-osgi-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-base-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-jvm-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-native-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-platform-play-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-plugin-development-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-plugin-use-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-plugins-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-publish-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-reporting-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-gcs-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-http-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-s3-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-resources-sftp-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-scala-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-signing-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-test-kit-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-testing-base-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-testing-jvm-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-testing-native-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-tooling-api-builders-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/gradle-workers-4.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.2-bin/cl9xe1l8k8ophj72k8rv6xbu7/gradle-4.2/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -696,14 +690,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/editRecette.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/model/Recette.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/recette.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/ExportController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/menu.html" />
         <option value="$PROJECT_DIR$/src/main/java/recettes/controller/AgendaController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/agenda.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
       </list>
     </option>
   </component>
@@ -737,9 +731,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -863,7 +856,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1004,7 +998,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1524238068598" />
+    <option name="lastUpdateTimestamp" value="1524642547645" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1026,7 +1020,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1600" height="873" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1037,25 +1031,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27770618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28091684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1292,14 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/repository/IngredientRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/service/IngredientService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/service/RecetteService.java">
@@ -1309,29 +1295,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tarte_pommes.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pate_gyozas.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mousse_chocolat.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/brocoli_oignons.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/api/CategorieApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="323">
           <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding />
         </state>
@@ -1339,7 +1309,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/repository/CategorieRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="170">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
@@ -1348,23 +1318,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/ExportController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="612">
           <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="114" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/AgendaController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="153">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1372,17 +1334,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recetteEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/recettes/controller/RecetteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/agenda.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/recette.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="949">
+          <caret line="110" column="27" lean-forward="true" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
+        <state relative-caret-position="470">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>

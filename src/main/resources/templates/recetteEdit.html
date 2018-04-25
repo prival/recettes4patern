@@ -18,6 +18,7 @@
 
     <div>
         <form th:action="@{|/recette/update/${recette.id}|}" th:object="${recette}" method="post">
+            <input type="hidden" id="ordre" th:field="*{ordre}" />
 
             <h3>Modifier une recette</h3>
 
