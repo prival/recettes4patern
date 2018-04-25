@@ -6,18 +6,19 @@
     <title>Menu</title>
 </head>
 <body>
+
 <div id="mySidenav" class="sidenav" th:fragment="sidenav">
 
     <div th:each="categorie : ${session.categoriesMenu}" th:id="|categorie${categorie.id}|" th:name="${categorie.libelle}">
         <a class="menu-first" th:href="@{|/categorie/${categorie.id}|}" th:value="${categorie.id}">
         <!--<a class="menu-first" th:href="|/${#strings.unCapitalize(categorie.libelle)}|" th:value="${categorie.id}">-->
-            <span th:text="${categorie.libelle}"></span>
+            <span class="libCategorie" th:text="${categorie.libelle}"></span>
         </a>
         <input type="hidden" class="ordreCategorie" th:value="${categorie.ordre}" />
 
         <span th:each="recette : ${categorie.recettes}" th:name="${recette.libelle}">
             <a class="menu-second" th:href="@{|/recette/${recette.id}|}" th:name="idRecette">
-                    <span th:text="${recette.libelle}" style="font-family:arial;font-size:85%;"></span>
+                    <span class="libRecette" th:text="${recette.libelle}" style="font-family:arial;font-size:85%;"></span>
             </a>
             <input type="hidden" class="ordreRecette" th:id="|ordre${recette.id}|" th:value="${recette.ordre}" />
         </span>
@@ -25,9 +26,9 @@
 
     <br/>
 
-    <a id="goAdmin" class="menu-first" href="/admin">Admin</a>
+    <a id="goAdmin" class="menu-first" href="/admin"><span class="fontMenu">Admin</span></a>
 
-    <a id="goAgenda" class="menu-first" href="/agenda">Agenda</a>
+    <a id="goAgenda" class="menu-first" href="/agenda"><span class="fontMenu">Agenda</span></a>
 
 </div>
 

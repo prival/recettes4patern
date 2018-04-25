@@ -5,16 +5,22 @@
  /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
-    /*width: 0; /* 0 width - change this with JavaScript */
     width: 300px;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    /*position: absolute;*/
+    /*z-index: -9999;*/
+    top: 60px; /* Stay at the top */
+    bottom: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: #2A3F54;
+    overflow-y: scroll;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px; /* Place content 60px from the top */
-    /*transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    /*padding-top: 60px;*/ /* Place content 60px from the top */
+}
+
+
+.libCategorie, .libRecette, .fontMenu {
+    color: #DEE6F1;
 }
 
 /* The navigation menu links */
@@ -28,6 +34,10 @@
     transition: 0.3s;
 }
 */
+
+a:hover {
+    background-color: #4A5F74;
+}
 
 /* The navigation menu links */
 .menu-first {
@@ -50,9 +60,6 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
 
 /* Page content */
 .main {

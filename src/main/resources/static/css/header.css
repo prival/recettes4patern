@@ -1,0 +1,29 @@
+
+.navbar {
+    position: fixed;
+    height:60px;
+    width: 100%;
+    top: 0;
+    background: #2A3F54;
+}
+
+.container {
+    width:100%;
+    left: 0px;
+    padding-left: 300px;
+    margin-left: 0px;
+}
+
+.top_nav {
+    left: 0px;
+    padding-left: 0px;
+}
+
+.navbar-header {
+    left: 0px;
+    padding-left: 0px;
+}
+
+.navbar-span {
+    color: #DEE6F1;
+}
