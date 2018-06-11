@@ -101,4 +101,16 @@ public class RecetteController {
 //        return ResponseEntity.ok();
 //        return "redirect:/categorie";
     }
+
+    @GetMapping("affichageRecettes")
+    public String affichageRecettes(Model model) {
+//        List<Recette> recettes = recetteService.getAllRecettes();
+        List<Categorie> categories = categorieService.getAllCategories();
+        model.addAttribute("categories", categories);
+
+        Categorie categorie = new Categorie("", 1);
+        model.addAttribute("categorie", categorie);
+
+        return "categories";
+    }
 }
