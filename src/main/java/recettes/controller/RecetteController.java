@@ -44,6 +44,7 @@ public class RecetteController {
             HttpSession session,
             @ModelAttribute("recette") Recette recette) {
 
+        recette.setVisible(true);
         recetteService.createRecette(recette);
 
         return "redirect:/index";
@@ -111,6 +112,6 @@ public class RecetteController {
         Categorie categorie = new Categorie("", 1);
         model.addAttribute("categorie", categorie);
 
-        return "categories";
+        return "affichageRecettes";
     }
 }

@@ -27,6 +27,9 @@ public class Recette {
     @Column(name = "ordre")
     private int ordre;
 
+    @Column(name = "visible", nullable = false)
+    private boolean visible;
+
     @ManyToOne
     @JoinColumn(name = "id_categorie")
     private Categorie categorie;
@@ -63,6 +66,14 @@ public class Recette {
         this.etapes = etapes;
     }
 
+    public Categorie getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(Categorie categorie) {
+        this.categorie = categorie;
+    }
+
     public int getOrdre() {
         return ordre;
     }
@@ -71,12 +82,12 @@ public class Recette {
         this.ordre = ordre;
     }
 
-    public Categorie getCategorie() {
-        return categorie;
+    public boolean getVisible() {
+        return visible;
     }
 
-    public void setCategorie(Categorie categorie) {
-        this.categorie = categorie;
+    public void setVisible(boolean visible) {
+        this.visible = visible;
     }
 
     @Override

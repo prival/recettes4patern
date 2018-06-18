@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import recettes.exception.ResourceNotFoundException;
 import recettes.model.Categorie;
+import recettes.model.Recette;
 import recettes.repository.CategorieRepository;
 
 import javax.validation.Valid;
@@ -24,7 +25,10 @@ public class CategorieService {
     CategorieRepository categorieRepository;
 
     public List<Categorie> getAllCategories() {
-        return categorieRepository.findAll(sortByOrdreAsc());
+//        return categorieRepository.findAll();
+
+        List<Categorie> categories = categorieRepository.findAll( sortByOrdreAsc());
+        return categories;
     }
 
     private Sort sortByOrdreAsc() {

@@ -1,5 +1,6 @@
 package recettes.repository;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,6 @@ import java.util.List;
 public interface CategorieRepository extends JpaRepository<Categorie, Long> {
 
     @Override
-    @Query("select c from Categorie c left join Recette")
+    @Query("select c from Categorie c")
     List<Categorie> findAll();
 }
